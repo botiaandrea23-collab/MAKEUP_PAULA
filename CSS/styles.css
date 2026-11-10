@@ -1,0 +1,850 @@
+
+/* ============================== */
+/* FUENTES */
+/* ============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+
+/* ============================== */
+/* CONFIGURACIÓN PRINCIPAL */
+/* ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    padding: 22px 35px;
+    background-color: #ffffff;
+    color: #51413e;
+    font-family: "Poppins", sans-serif;
+}
+
+.header,
+main,
+.footer {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+
+/* ============================== */
+/* ENCABEZADO */
+/* ============================== */
+
+.header {
+    min-height: 82px;
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #fffaf7;
+    border-radius: 18px 18px 0 0;
+}
+
+/* LOGOTIPO */
+
+.logo {
+    color: #9c7568;
+    font-family: "Playfair Display", serif;
+    font-size: 29px;
+    font-weight: 400;
+    letter-spacing: 6px;
+}
+
+/* NAVEGACIÓN */
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav a {
+    color: #554843;
+    font-size: 11px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #c18493;
+}
+
+/* BOTÓN DEL ENCABEZADO */
+
+.boton_menu {
+    display: inline-block;
+    padding: 11px 21px;
+    border-radius: 30px;
+    background-color: #d9a99b;
+    color: #ffffff;
+    font-size: 11px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.boton_menu:hover {
+    background-color: #a97066;
+    transform: translateY(-2px);
+}
+
+
+/* ============================== */
+/* INICIO */
+/* ============================== */
+
+.Inicio {
+    min-height: 570px;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    overflow: hidden;
+    background-color: #f8e9e5;
+    border-radius: 0 0 18px 18px;
+}
+
+/* CONTENIDO DEL INICIO */
+
+.contenido_inicio {
+    position: relative;
+    z-index: 3;
+    min-height: 570px;
+    padding: 70px 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #f8e9e5;
+}
+
+/* SUBTÍTULOS */
+
+.subtitulo {
+    margin-bottom: 27px;
+    color: #a77b70;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+/* TÍTULO */
+
+.contenido_inicio h1 {
+    margin-bottom: 25px;
+    color: #292322;
+    font-family: "Playfair Display", serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.contenido_inicio h1 em {
+    color: #9c7568;
+    font-style: italic;
+}
+
+/* DESCRIPCIÓN */
+
+.descripcion {
+    max-width: 350px;
+    margin-bottom: 34px;
+    color: #695852;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* BOTÓN PRINCIPAL */
+
+.boton {
+    display: inline-block;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #d5a092, #bc8174);
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.boton:hover {
+    background: #a97066;
+    transform: translateY(-3px);
+}
+
+/* IMAGEN PRINCIPAL */
+
+.imagen_inicio {
+    position: relative;
+    min-height: 570px;
+    overflow: hidden;
+    background-color: #f8e9e5;
+}
+
+.imagen_inicio img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* DEGRADADO DE LA IMAGEN */
+
+.imagen_inicio::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: -1px;
+    width: 32%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        #f8e9e5 0%,
+        rgba(248, 233, 229, 0.92) 18%,
+        rgba(248, 233, 229, 0.55) 48%,
+        rgba(248, 233, 229, 0.18) 75%,
+        rgba(248, 233, 229, 0) 100%
+    );
+    pointer-events: none;
+}
+
+
+/* ============================== */
+/* SECCIONES GENERALES */
+/* ============================== */
+
+.seccion {
+    padding: 85px 55px;
+    text-align: center;
+    background-color: #fffaf7;
+}
+
+.seccion h2,
+.promociones h2 {
+    margin-bottom: 18px;
+    color: #51413e;
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    font-weight: 400;
+}
+
+.texto_seccion {
+    max-width: 550px;
+    margin: 0 auto 40px;
+    color: #806d66;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* ============================== */
+/* SERVICIOS */
+/* ============================== */
+
+.contenedor_tarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.tarjeta {
+    overflow: hidden;
+    padding-bottom: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(100, 70, 60, 0.08);
+    transition: 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-7px);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta h3 {
+    margin: 20px 10px 10px;
+    color: #9c7568;
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.tarjeta p {
+    padding: 0 18px;
+    color: #806d66;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* ============================== */
+/* NOSOTROS */
+/* ============================== */
+
+.nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+    text-align: left;
+    background-color: #f8e9e5;
+}
+
+.imagen_nosotros img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.contenido_nosotros h2 {
+    margin-bottom: 25px;
+}
+
+.contenido_nosotros p {
+    margin-bottom: 18px;
+    color: #695852;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.contenido_nosotros h3 {
+    margin-bottom: 10px;
+    color: #9c7568;
+    font-family: "Playfair Display", serif;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+
+/* ============================== */
+/* PRECIOS */
+/* ============================== */
+
+.contenedor_precios {
+    max-width: 750px;
+    margin: 35px auto 0;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(100, 70, 60, 0.07);
+}
+
+.precio {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 5px;
+    border-bottom: 1px solid #f0dfd9;
+    color: #695852;
+    font-size: 14px;
+}
+
+.precio:last-child {
+    border-bottom: none;
+}
+
+.precio strong {
+    color: #a97066;
+}
+
+
+/* ============================== */
+/* PROMOCIONES */
+/* ============================== */
+
+/* SECCION PROMOCIONES */
+
+.promociones {
+    padding: 100px 40px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #f3dfda,
+        #f8e9e5,
+        #eed5ce
+    );
+}
+
+/* TITULO */
+
+.promociones h2 {
+    margin-bottom: 20px;
+    color: #51413e;
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.promociones h2 em {
+    color: #b8797d;
+}
+
+/* DESCRIPCION */
+
+.promociones p:not(.subtitulo) {
+    max-width: 550px;
+    margin: 0 auto 30px;
+    color: #695852;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* ============================== */
+/* RESERVAS */
+/* ============================== */
+
+.formulario {
+    max-width: 550px;
+    margin: 35px auto 0;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(100, 70, 60, 0.08);
+}
+
+.formulario label {
+    margin: 13px 0 8px;
+    color: #695852;
+    font-size: 12px;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ead8d2;
+    border-radius: 8px;
+    outline: none;
+    background-color: #fffaf7;
+    color: #51413e;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+    border-color: #c18c83;
+}
+
+.formulario button {
+    margin-top: 25px;
+}
+
+
+/* ============================== */
+/* CONTACTO */
+/* ============================== */
+
+.contacto {
+    background-color: #f8e9e5;
+}
+
+.contacto > p:not(.subtitulo) {
+    max-width: 550px;
+    margin: 0 auto 25px;
+    color: #695852;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.datos_contacto {
+    margin-top: 30px;
+}
+
+.datos_contacto p {
+    margin: 15px 0;
+    color: #695852;
+    font-size: 13px;
+}
+
+.datos_contacto strong {
+    color: #9c7568;
+}
+
+
+/* ============================== */
+/* PIE DE PÁGINA */
+/* ============================== */
+
+.footer {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #51413e;
+    border-radius: 0 0 15px 15px;
+    color: #ffffff;
+}
+
+.footer h2 {
+    margin-bottom: 12px;
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+.footer p {
+    margin: 10px 0;
+    color: #f1ded8;
+    font-size: 11px;
+}
+
+/* Espacio después de los datos de contacto */
+.datos_contacto {
+    margin-bottom: 30px;
+}
+
+
+/* ============================== */
+/* DISEÑO RESPONSIVE */
+/* ============================== */
+
+@media (max-width: 1000px) {
+
+    .header {
+        gap: 15px;
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenido_inicio {
+        padding: 50px 35px;
+    }
+
+    .contenido_inicio h1 {
+        font-size: 48px;
+    }
+
+    .contenedor_tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 20px 12px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .nav {
+        gap: 14px;
+    }
+
+    .nav a {
+        font-size: 10px;
+    }
+
+    .Inicio {
+        grid-template-columns: 1fr;
+    }
+
+    .contenido_inicio {
+        min-height: auto;
+        padding: 55px 30px;
+    }
+
+    .contenido_inicio h1 {
+        font-size: 46px;
+    }
+
+    .imagen_inicio {
+        min-height: 350px;
+    }
+
+    .imagen_inicio::before {
+        display: none;
+    }
+
+    .seccion {
+        padding: 60px 22px;
+    }
+
+    .seccion h2,
+    .promociones h2 {
+        font-size: 33px;
+    }
+
+    .contenedor_tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .imagen_nosotros img {
+        height: 300px;
+    }
+
+    .contenedor_precios {
+        padding: 15px;
+    }
+
+    .precio {
+        font-size: 12px;
+    }
+
+    .formulario {
+        padding: 22px;
+    }
+
+}
+/* RESERVAS */
+
+.reservas {
+    padding: 80px 20px;
+    background-color: #fffaf7;
+}
+
+.titulo_reservas {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo_reservas h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #51413e;
+}
+
+.titulo_reservas p {
+    color: #806e68;
+}
+
+.formulario_reserva {
+    max-width: 550px;
+    margin: auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(156, 117, 104, 0.12);
+}
+
+.formulario_reserva label {
+    display: block;
+    margin-bottom: 8px;
+    color: #51413e;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.formulario_reserva input,
+.formulario_reserva select {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 22px;
+    border: 1px solid #ead5d0;
+    border-radius: 10px;
+    background-color: #fffaf7;
+    font-family: 'Poppins', sans-serif;
+    color: #51413e;
+}
+
+.boton_reserva {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #c18493;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.boton_reserva:hover {
+    background-color: #9c7568;
+}
+
+/* OPINIONES DE CLIENTES */
+
+.opiniones {
+    padding: 90px 35px;
+    background-color: #fdf2ef;
+    text-align: center;
+}
+
+.titulo_opiniones {
+    margin-bottom: 45px;
+}
+
+.titulo_opiniones h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #51413e;
+    margin: 15px 0;
+}
+
+.titulo_opiniones h2 em {
+    color: #c18493;
+}
+
+.titulo_opiniones p {
+    color: #806e68;
+    font-size: 14px;
+}
+
+.contenedor_opiniones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.tarjeta_opinion {
+    background-color: #fffaf7;
+    padding: 35px 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(156, 117, 104, 0.10);
+    transition: 0.3s;
+}
+
+.tarjeta_opinion:hover {
+    transform: translateY(-8px);
+}
+
+.estrellas {
+    color: #d6a65c;
+    font-size: 23px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.tarjeta_opinion p {
+    color: #806e68;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.tarjeta_opinion h3 {
+    color: #51413e;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.tarjeta_opinion span {
+    color: #c18493;
+    font-size: 12px;
+}
+
+/* DISEÑO PARA CELULARES */
+
+@media (max-width: 768px) {
+    .contenedor_opiniones {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo_opiniones h2 {
+        font-size: 32px;
+    }
+}
+/* PROMOCIONES */
+
+.promociones {
+    padding: 80px 40px;
+    background-color: #fffaf7;
+    text-align: center;
+}
+
+.titulo_promociones h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #51413e;
+}
+
+.titulo_promociones h2 em {
+    color: #c18493;
+}
+
+.titulo_promociones p {
+    color: #806e68;
+}
+
+.contenedor_promociones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.tarjeta_promocion {
+    background-color: white;
+    padding: 18px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(156,117,104,0.12);
+    transition: 0.3s;
+}
+
+.tarjeta_promocion:hover {
+    transform: translateY(-8px);
+}
+
+.tarjeta_promocion img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.tarjeta_promocion h3 {
+    font-family: 'Playfair Display', serif;
+    color: #51413e;
+    font-size: 24px;
+}
+
+.tarjeta_promocion p {
+    color: #806e68;
+    font-size: 13px;
+}
+
+.tarjeta_promocion span {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 9px 18px;
+    background-color: #f8e9e5;
+    color: #9c7568;
+    border-radius: 20px;
+    font-weight: 600;
+}
